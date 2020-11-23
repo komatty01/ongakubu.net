@@ -1,3 +1,3 @@
 ongakubu.net
 ===
-Currently under construction...
+https://www.ongakubu.net
