@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>お問い合わせ | www.ongakubu.net</title>
+  <meta name="description" content="お問い合わせはこちらよりどうぞ。">
+	<link rel="icon" href="/image/favicon.ico">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div>
+        <h1><a href="/index.html">横浜市立南高校音楽部卒業生の会</a></h1>
+        <h2 class="linetitle">お問い合わせフォーム</h2>
+        <script type="text/javascript">
+          var submitted = false;
+          var currentURL = window.location.href;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./thanks.html';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSebFjNVNYwzUc9CBQkPgFj_sIX7NkA3NL8DHoKSXuWusVNYsA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+            <label for="userName">氏名</label>
+            <input type="text" id="userName" name="entry.462841448" placeholder="音楽わかば" required>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="entry.199094172" placeholder="mail@example.com" required>
+            <label for="content">メッセージ</label>
+            <textarea id="content" name="entry.1758569609" style="height:200px" placeholder="メッセージを入力してください。" required></textarea>
+            <label for="noRobot">私はロボットではありません</label>
+            <details>
+                <summary>このコードを入力してください（クリックすると開きます）。</summary>
+                <img src="../image/noRobot.jpg">
+            </details>
+            <input type="text" id="noRobot" name="entry.721895254" required>
+          <input type="submit" value="送信">
+        </form>
+        <p><input type="button" value="戻る" onclick="history.back()"></p>
+	</div>
+</body>
+</html>
