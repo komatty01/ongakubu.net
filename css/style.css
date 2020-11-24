@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Nunito&display=swap');
 
 body {
-	background-color:#e5ed9b;
+	background-color:#eaefaa;
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', 'Kosugi Maru', sans-serif;
@@ -21,6 +21,9 @@ a:link, a:visited {
 a:hover {
 	color: #004e98;
 	text-decoration: none;
+}
+.sitetitle {
+	color: #8e0303;
 }
 .linetitle {
 	border-bottom: 2px solid #c0c6c9;
