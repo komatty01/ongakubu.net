@@ -120,6 +120,7 @@ input[type=email], select, textarea {
 }
 input[type=submit] {
 	font: 1em sans-serif;
+	font-family: 'Nunito', 'Kosugi Maru', sans-serif;
 	width: 100%;
 	background-color: #81a568;
 	color: white;
