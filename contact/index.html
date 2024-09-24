@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Contact | www.ongakubu.net</title>
+    <meta name="description" content="お問い合わせはこちらよりどうぞ。">
+    <link rel="icon" href="/image/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="global-navbar">
+        <div class="global-navbar-logo"><a href="/">Ongakubu</a></div>
+        <ul class="global-navlinks">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="global-navbar-hamburger">&#9776;</label>
+            <div class="global-navbar-menu">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="paper">
+        <h1 class="linetitle">お問い合わせ</h1>
+        <script type="text/javascript">
+            var submitted = false;
+            var currentURL = window.location.href;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted) {window.location='/contact/thanks.html';}"></iframe>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScw4CoIzU3dpsLM-LLnArjJrIEBepX43JdEp_Hqe9y-F7Nx4g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+            <label for="name">氏名</label>
+            <input type="text" id="name" name="entry.1333837295" placeholder="音楽わかば" required>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="entry.1413695150" placeholder="mail@example.com" required>
+            <label for="subject">件名</label>
+            <input type="text" id="subject" name="entry.1514616857" placeholder="件名を入力してください" required>
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="entry.1043143883" style="height:200px" placeholder="メッセージを入力してください" required></textarea>
+            <label for="noRobot">私はロボットではありません</label>
+            <details>
+                <summary>このコードを入力してください（クリックすると開きます）。</summary>
+                <img src="/image/norobot.png" width="275px">
+            </details>
+            <input type="text" id="noRobot" name="entry.485136029" required>
+            <input type="submit" value="送信">
+        </form>
+        <input type="button" value="戻る" onclick="history.back()">
+    </div>
+    </div>
+    <footer class="copyright">Copyright&nbsp;&copy;&nbsp;<span id="year"></span>&nbsp;www.ongakubu.net</footer>
+    <script type="text/javascript" src="/script/script.js"></script>
+</body>
+</html>
